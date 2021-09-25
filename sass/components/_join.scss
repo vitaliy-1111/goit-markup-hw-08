@@ -1,5 +1,10 @@
 .join {
-  margin-right: 93px;
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
 }
 .join__text,
 .signup-form__text {
@@ -12,6 +17,10 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
+
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+  }
 }
 
 .socials-list__link--color {

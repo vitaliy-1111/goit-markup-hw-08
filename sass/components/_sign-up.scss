@@ -1,16 +1,21 @@
 .signup-form {
-  display: flex;
-  flex-wrap: wrap;
-  width: 570px;
-  height: 86px;
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 570px;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
 .signup-form__text {
+  display: block;
   width: 100%;
 }
 .signup-form__input {
-  width: 358px;
+  width: 100%;
+  margin-bottom: 20px;
   height: 50px;
-  margin-right: 12px;
   padding: 15px 16px;
 
   font-weight: $font-light;
@@ -42,11 +47,17 @@
 
     color: rgba(255, 255, 255, 0.6);
   }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+    margin-right: 12px;
+    margin-bottom: 0;
+  }
 }
 
 .signup-form__button {
   position: relative;
   width: 200px;
+  height: 50px;
 
   padding-right: 62px;
   padding-left: 29px;

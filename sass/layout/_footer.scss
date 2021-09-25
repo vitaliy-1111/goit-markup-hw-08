@@ -4,13 +4,29 @@
   background-color: #2f303a;
 }
 .page-footer__container {
-  display: flex;
-  align-items: center;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  @media screen and (min-width: 1200px) {
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .page-footer__address {
   font-style: normal;
-  margin-right: 70px;
+  @media screen and (max-width: 1199px) {
+    text-align: center;
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 768px) {
+    margin-right: 165px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 70px;
+  }
 }
 .page-footer__logo {
   display: block;
@@ -30,10 +46,10 @@
   }
 }
 .page-footer__mail {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
 }
 .page-footer__location {
   margin: 0;
-  margin-bottom: 9px;
+  margin-bottom: 8px;
   color: $color-secondary-text;
 }

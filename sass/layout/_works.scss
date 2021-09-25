@@ -1,6 +1,10 @@
 .works-section {
-  padding-top: 47px;
+  padding-top: 0;
   padding-bottom: 94px;
+  display: none;
+  @media screen and (min-width: 1200px) {
+    display: block;
+  }
 }
 .works-list {
   display: flex;
