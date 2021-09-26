@@ -153,20 +153,22 @@
             <div class="works-list__thumb">
               <h3 class="works-list__title">Десктопные приложения</h3>
             </div>
-            <img src="./images/project/box1-min.jpg" alt="Печатает на клавиатуре" width="370" height="294">
+            <img srcset="./images/works/works1-x1-min.jpg 1x, ./images/works/works1-x2-min.jpg 2x"
+              src="./images/works/works1-x1-min.jpg" alt="Печатает на клавиатуре">
           </li>
           <li class="works-list__item">
             <div class="works-list__thumb">
               <h3 class="works-list__title">Мобильные приложения</h3>
             </div>
-            <img src="./images/project/box2-min.jpg" alt="Держит в руках телефон на фоне десктопа" width="370"
-              height="294">
+            <img srcset="./images/works/works2-x1-min.jpg 1x, ./images/works/works2-x2-min.jpg 2x"
+              src="./images/works/works2-x1-min.jpg" alt="Держит в руках телефон на фоне десктопа">
           </li>
           <li class="works-list__item">
             <div class="works-list__thumb">
               <h3 class="works-list__title">Дизайнерские решения</h3>
             </div>
-            <img src="./images/project/box3-min.jpg" alt="Держит в руках планшет" width="370" height="294">
+            <img srcset="./images/works/works3-x1-min.jpg 1x, ./images/works/works3-x2-min.jpg 2x"
+              src="./images/works/works3-x1-min.jpg" alt="Держит в руках планшет">
           </li>
         </ul>
       </div>
@@ -177,7 +179,18 @@
         <h2 class="team-section__title secondary-title">Наша команда</h2>
         <ul class="team-list list">
           <li class="team-list__item">
-            <img class="team-list__img" src="./images/team/card1-min.jpg" alt="фото Игоря">
+            <picture>
+              <source
+                srcset="./images/team/team-igor-desktop-x1-min.jpg 1x, ./images/team/team-igor-desktop-x2-min.jpg 2x, ./images/team/team-igor-desktop-x3-min.jpg 3x"
+                media="(min-width:1200px)" />
+              <source
+                srcset="./images/team/team-igor-tablet-x1-min.jpg 1x, ./images/team/team-igor-tablet-x2-min.jpg 2x, ./images/team/team-igor-tablet-x3-min.jpg 3x"
+                media="(min-width:768px)" />
+              <source
+                srcset="./images/team/team-igor-mobile-x1-min.jpg 1x, ./images/team/team-igor-mobile-x2-min.jpg 2x, ./images/team/team-igor-mobile-x3-min.jpg 3x"
+                media="(max-width: 767px)" />
+              <img class="team-list__img" src="./images/team/team-igor-desktop-x1-min.jpg" alt="фото Игоря">
+            </picture>
             <div class="team-list__text">
               <h3 class="team-list__title">Игорь Демьяненко</h3>
               <p lang="en" class="team-list__speciality">Product Designer</p>
@@ -214,7 +227,18 @@
             </div>
           </li>
           <li class="team-list__item">
-            <img class="team-list__img" src="./images/team/card2-min.jpg" alt="фото Ольги">
+            <picture>
+              <source
+                srcset="./images/team/team-olga-desktop-x1-min.jpg 1x, ./images/team/team-olga-desktop-x2-min.jpg 2x, ./images/team/team-olga-desktop-x3-min.jpg 3x"
+                media="(min-width:1200px)" />
+              <source
+                srcset="./images/team/team-olga-tablet-x1-min.jpg 1x, ./images/team/team-olga-tablet-x2-min.jpg 2x, ./images/team/team-olga-tablet-x3-min.jpg 3x"
+                media="(min-width:768px)" />
+              <source
+                srcset="./images/team/team-olga-mobile-x1-min.jpg 1x, ./images/team/team-olga-mobile-x2-min.jpg 2x, ./images/team/team-olga-mobile-x3-min.jpg 3x"
+                media="(max-width: 767px)" />
+              <img class="team-list__img" src="./images/team/team-olga-desktop-x1-min.jpg" alt="фото Ольги">
+            </picture>
             <div class="team-list__text">
               <h3 class="team-list__title">Ольга Репина</h3>
               <p lang="en" class="team-list__speciality">Frontend Developer</p>
@@ -251,7 +275,18 @@
             </div>
           </li>
           <li class="team-list__item">
-            <img class="team-list__img" src="./images/team/card3-min.jpg" alt="фото Николая">
+            <picture>
+              <source
+                srcset="./images/team/team-nikola-desktop-x1-min.jpg 1x, ./images/team/team-nikola-desktop-x2-min.jpg 2x, ./images/team/team-nikola-desktop-x3-min.jpg 3x"
+                media="(min-width:1200px)" />
+              <source
+                srcset="./images/team/team-nikola-tablet-x1-min.jpg 1x, ./images/team/team-nikola-tablet-x2-min.jpg 2x, ./images/team/team-nikola-tablet-x3-min.jpg 3x"
+                media="(min-width:768px)" />
+              <source
+                srcset="./images/team/team-nikola-mobile-x1-min.jpg 1x, ./images/team/team-nikola-mobile-x2-min.jpg 2x, ./images/team/team-nikola-mobile-x3-min.jpg 3x"
+                media="(max-width: 767px)" />
+              <img class="team-list__img" src="./images/team/team-nikola-desktop-x1-min.jpg" alt="фото ">
+            </picture>
             <div class="team-list__text">
               <h3 class="team-list__title">Николай Тарасов</h3>
               <p lang="en" class="team-list__speciality">Marketing</p>
@@ -288,7 +323,18 @@
             </div>
           </li>
           <li class="team-list__item">
-            <img class="team-list__img" src="./images/team/card4-min.jpg" alt="фото Михаила">
+            <picture>
+              <source
+                srcset="./images/team/team-miha-desktop-x1-min.jpg 1x, ./images/team/team-miha-desktop-x2-min.jpg 2x, ./images/team/team-miha-desktop-x3-min.jpg 3x"
+                media="(min-width:1200px)" />
+              <source
+                srcset="./images/team/team-miha-tablet-x1-min.jpg 1x, ./images/team/team-miha-tablet-x2-min.jpg 2x, ./images/team/team-miha-tablet-x3-min.jpg 3x"
+                media="(min-width:768px)" />
+              <source
+                srcset="./images/team/team-miha-mobile-x1-min.jpg 1x, ./images/team/team-miha-mobile-x2-min.jpg 2x, ./images/team/team-miha-mobile-x3-min.jpg 3x"
+                media="(max-width: 767px)" />
+              <img class="team-list__img" src="./images/team/team-miha-desktop-x1-min.jpg" alt="фото Михаила">
+            </picture>
             <div class="team-list__text">
               <h3 class="team-list__title">Михаил Ермаков</h3>
               <p lang="en" class="team-list__speciality">UI Designer</p>
