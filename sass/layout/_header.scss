@@ -11,11 +11,10 @@
     min-height: 80px;
   }
   @media screen and (min-width: 1200px) {
-    justify-content: start;
+    justify-content: flex-start;
   }
 }
 .mobile-menu {
-  outline: red solid 2px;
   display: flex;
   flex-direction: column;
   position: fixed;
@@ -49,6 +48,14 @@
 
   background-color: transparent;
   border: none;
+  &:hover,
+  &:focus {
+    color: $color-accent;
+  }
+  @include transition-base(color);
+}
+.mobile-menu__icon {
+  fill: currentColor;
 }
 .mobile-menu__button-close {
   margin-left: auto;
@@ -108,6 +115,18 @@
 .mobile-menu-socials {
   display: flex;
 }
+.mobile-menu-socials__item {
+  &:not(:last-child) {
+    margin-right: 10px;
+    &:after {
+      content: '';
+      width: 1px;
+      height: 22px;
+      border-left: 1px solid rgba(33, 33, 33, 0.2);
+      margin-left: 10px;
+    }
+  }
+}
 .mobile-menu-socials__link {
   font-weight: $font-normal;
   font-size: 18px;
@@ -133,9 +152,15 @@
     align-items: center;
     height: 80px;
   }
+  @media screen and (min-width: 1200px) {
+    justify-content: space-between;
+  }
 }
 .page-header__nav {
   height: 100%;
+  @media screen and (min-width: 1200px) {
+    margin-right: 305px;
+  }
 }
 .page-header__logo {
   @media screen and (min-width: 1200px) {
@@ -144,10 +169,10 @@
 }
 .page-header__list {
   display: flex;
-  align-items: baseline;
-
   height: 100%;
-  margin-right: 84px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 84px;
+  }
 }
 .page-header__item {
   height: 100%;
@@ -167,6 +192,13 @@
   letter-spacing: 0.02em;
 
   color: #212121;
+
+  @include transition-base(color);
+
+  &:hover,
+  &:focus {
+    color: $color-accent;
+  }
 
   &--current {
     color: $color-accent;
@@ -198,7 +230,6 @@
   @media screen and (min-width: 1200px) {
     margin-bottom: 0;
     margin-right: 30px;
-    margin-left: auto;
   }
 }
 .page-header__mail,
@@ -211,10 +242,22 @@
   letter-spacing: 0.02em;
 
   color: #757575;
+
+  @include transition-base(color);
+
+  &:hover,
+  &:focus {
+    color: $color-accent;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
 }
 .icon-mail,
 .icon-phone {
   margin-right: 8px;
+  fill: currentColor;
 }
 /* -------mail and telephone in header -------*/
 

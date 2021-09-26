@@ -2,8 +2,8 @@
   position: absolute;
   top: 50%;
   left: 50%;
-  min-width: 528px;
-  min-height: 581px;
+  width: calc(100% - 30px);
+  height: calc(100%- 2 * 94px);
   transform: translate(-50%, -50%) scale(1);
 
   padding: 40px;
@@ -13,14 +13,22 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
-  overflow: hidden;
-
   @include transition-base(transform);
+
+  overflow: scroll;
 
   .backdrop--is-hidden & {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0.8);
+  }
+  @media screen and (min-width: 768px) {
+    width: 450px;
+    height: calc(100% - 2 * 80px);
+  }
+  @media screen and (min-width: 1200px) {
+    width: 528px;
+    height: calc(100% - 2 * 100px);
   }
 }
 .modal__close-button {

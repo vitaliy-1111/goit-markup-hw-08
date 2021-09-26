@@ -31,7 +31,8 @@
     fill: #2196f3;
   }
 }
-.modal-form__label {
+.modal-form__label,
+.checkbox-policy__label {
   margin-bottom: 4px;
 
   font-weight: 400;
@@ -42,7 +43,11 @@
   color: #757575;
 
   cursor: pointer;
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+  }
 }
+
 .modal-form__input,
 .modal-form__textarea {
   display: block;
@@ -80,19 +85,21 @@
 }
 .checkbox-policy {
   position: relative;
-  text-align: right;
-  width: 425px;
+  padding-left: 23px;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
   margin-bottom: 30px;
+  @media screen and (min-width: 1200px) {
+    text-align: center;
+  }
 }
 .checkbox-policy__icon {
   position: absolute;
   top: 50%;
   left: 0;
   transform: translateY(-50%);
-  margin-right: 8px;
   cursor: pointer;
 
   @include transition-base(opacity);
@@ -108,6 +115,9 @@
   }
   .checkbox-policy__input:checked ~ &--on {
     opacity: 1;
+  }
+  @media screen and (min-width: 1200px) {
+    left: 20px;
   }
 }
 .checkbox-policy__label {
