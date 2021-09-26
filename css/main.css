@@ -1587,14 +1587,14 @@ img {
 @media screen and (min-width: 768px) {
   .modal {
     width: 450px;
-    height: calc(100% - 2 * 80px);
+    height: 509px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
-    height: calc(100% - 2 * 100px);
+    height: 509px;
   }
 }
 
