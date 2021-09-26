@@ -1587,14 +1587,14 @@ img {
 @media screen and (min-width: 768px) {
   .modal {
     width: 450px;
-    height: 509px;
+    height: 609px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .modal {
     width: 528px;
-    height: 509px;
+    height: 581px;
   }
 }
 
@@ -1795,7 +1795,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .checkbox-policy__icon {
-    left: 20px;
+    left: 10px;
   }
 }
 
